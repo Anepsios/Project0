@@ -12,41 +12,46 @@ header {
 
 nav {
     background-color:darkgreen;
+    height:40px;
 }
 
 main {
-    background-color:gray;
+    background-color:lightgray;
 }
 
 footer {
     background-color:darkgreen;
+    height:40px;
 }
 
 #logo {
     position:relative;
     left:7px;
     bottom:5px;
-}
-#logofont {
+    width:100px;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 22px;
     color:black;
     letter-spacing: 3px;
-    transition-duration: 0.7s;
+    transition: color 0.7s;
 }
-#logofont:hover {
+
+#logo:hover {
     color:rgb(80, 199, 0);
-    transition-duration:0.7s;
+}
+
+#logoimg:hover + #logo {
+    color:rgb(80, 199, 0);
 }
 
 #logoimg {
     width: 100px;
     height: 80px;
 }
-
-#logoimg:hover + #logofont {
-    color:rgb(80, 199, 0);
+#logoimgsize {
+    width: 100px;
+    height: 80px;
 }
 
 a {
