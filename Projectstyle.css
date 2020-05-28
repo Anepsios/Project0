@@ -1,0 +1,55 @@
+body {
+    max-width: 80%;
+    margin:auto;
+    border:2px solid black;
+    border-bottom:none;
+    border-top:none;
+}
+
+header {
+    background-color:white;
+}
+
+nav {
+    background-color:darkgreen;
+}
+
+main {
+    background-color:gray;
+}
+
+footer {
+    background-color:darkgreen;
+}
+
+#logo {
+    position:relative;
+    left:7px;
+    bottom:5px;
+}
+#logofont {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 22px;
+    color:black;
+    letter-spacing: 3px;
+    transition-duration: 0.7s;
+}
+#logofont:hover {
+    color:rgb(80, 199, 0);
+    transition-duration:0.7s;
+}
+
+#logoimg {
+    width: 100px;
+    height: 80px;
+}
+
+#logoimg:hover + #logofont {
+    color:rgb(80, 199, 0);
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
