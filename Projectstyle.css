@@ -74,6 +74,9 @@ nav a {
 nav a:hover {
   background-color: #009c00;
 }
+nav .actv {
+  background-color: #005000;
+}
 nav ul {
   padding: 0;
   margin: auto;
@@ -96,6 +99,7 @@ section h1 {
 }
 section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
 }
 
 .cityimg {
@@ -291,14 +295,104 @@ footer a {
   margin: auto;
   font-weight: bold;
 }
+table {
+  margin: auto;
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
 .col-md {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.col-sm {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: auto;
 }
 
 .col-12 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.row {
+  text-align: left;
+}
+
+.col-3 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#animcontainer {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  background-color: lightgrey;
+  display: grid;
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px auto auto auto auto;
+}
+#animcontainer #row1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#animcontainer #row2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#animcontainer #row3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#animcontainer #row4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#animcontainer #animzone {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: black;
+  border-radius: 15px;
+}
+#animcontainer #animzone input[type=number] {
+  border-radius: 5px;
+  height: 60px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  text-align: right;
+  font-size: 28px;
+}
+#animcontainer #animzone input::-webkit-outer-spin-button, #animcontainer #animzone input::-webkit-inner-spin-button {
+  display: none;
 }
 
 /*# sourceMappingURL=projectstyle.css.map */
